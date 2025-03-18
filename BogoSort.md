@@ -4,9 +4,9 @@
 **Проект:** Эмпориум  
 **Команда:** BogoSort  
 **Состав команды:**
-- Агеева Ксения 
-- Чупраков Сергей 
-- Санин Фёдор 
+- Агеева Ксения
+- Чупраков Сергей
+- Санин Фёдор
 - Куренков Дмитрий
 
 **Ментор:**
@@ -21,7 +21,7 @@
 > ***Комментарий:***  
 > Позитивные и негативные кейсы
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Проверка производится в браузере Google Chrome, если не написано иное напрямую
 
 > [!IMPORTANT]  
@@ -49,38 +49,38 @@
     - Категория: _Спорт и отдых_
     - Название товара: _Jogel Мяч баскетбольный JB-100_
     - Цена: _999_
-    - Описание: 
+    - Описание:
     ```md
     Топовый мяч, хорошо отскакивает от большинства поверхностей. Хорошо подходит для стритбола и как для начала занятий баскетболом, так и для профессиональной деятельности.
     ```
     - Фотография: _Файл изображения см. ниже_
-    - Адрес: _Москва, ул. Тверская, 12_  
+    - Адрес: _Москва, ул. Тверская, 12_
   - **Действие:** Нажатие на кнопку "Разместить объявление"
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Позитивный%20сценарий/img.png)
+    ![img.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img.png)
 
   - **Ожидание:**
     - Объявление успешно создано и отображается в каталоге.
     - Фотография корректно загружена и отображается в карточке товара.
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Позитивный%20сценарий/img_1.png)
-  
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Позитивный%20сценарий/img_2.png)
-  
+    ![img_1.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img_1.png)
+
+    ![img_2.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img_2.png)
+
   - **Фактический результат:**
     - [x] Объявление создано, отображается в каталоге.
     - [ ] Изображение не отображается (отсутствует или сломанный значок).
 
 Добавленное изображение:
 
-![basketball-white-background-ai-generated.jpg](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
+![basketball-white-background-ai-generated.jpg](./img/4.1/Создание%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
 
 - [x] **Цена равная 0**
   - **Ввод:** `0`
   - **Ожидание:** Система пропустила создав объявление с нулевой ценой
   - **Фактический результат:** Система пропустила создав объявление с нулевой ценой
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
 
 ##### Негативные сценарии
 
@@ -90,15 +90,15 @@
 
 - [ ] **Изменить в html значение value на несуществующее**  <a name="bug-4.1-006"></a>
   - **Ввод:** Категория `Женский гардероб` // Перед этим поменять значение value с `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35700`.
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
 
   - **Ожидание:** Не пропустит, вернет ошибку
   - **Фактический результат:** Не пропустило, вернуло ошибку, но с бекенда.
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
+  ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
 
 ###### Название товара
 
@@ -107,7 +107,7 @@
   - **Ожидание:** Подсветить поле ввода: "Название".
   - **Фактический результат:** Выделилось красным поле "Название".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -118,8 +118,8 @@
   ```
   - **Ожидание:** Ошибка "Название не должно превышать 45 символов"
   - **Фактический результат:** Система не обработала ошибку, объявление разместилось.
-    
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -135,20 +135,20 @@
 
 - [ ] **Введены битые символы** <a name="bug-4.1-003"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
-  
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
+
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление удалось создать
-  
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
+
+    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
 
 - [x] **Эмодзи в названии**
   - **Ввод:** `🙂`
   - **Ожидание:** Создание объявления с таким названием.
   - **Фактический результат:** Создание объявления с таким названием.
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
 
 ###### Цена
 
@@ -157,81 +157,81 @@
 - [ ] **Ввод символов после изменения типа (html)** <a name="bug-4.1-004"></a>
   - **Ввод:** `test` // Перед этим изменить type поля на `text`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Система пропустила создав объявление с нулевой ценой
-  
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
+
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
 
 - [x] **Отрицательная цена**
   - **Ввод:** `-2`
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
 
   - **Ожидание:** Выделилось красным поле "Цена".
   - **Фактический результат:** Выделилось красным поле "Цена".
-  
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
+
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
 
 - [x] **Битые цифры (html)**
   - **Ввод:** `1` // обработать через https://zalgo.org/ и перед этим изменить type поля на `text`.
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
 
   - **Ожидание:** Выделилось красным поле "Цена".
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
 
 - [x] **Дробные числа**
   - **Ввод:** `0.55555`
   - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
   - **Фактический результат:** Вывод соответствующего уведомления о невозможности дробной цены
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
 
 - [x] **Дробные числа (html)**
   - **Ввод:** `0.55555` // Перед этим изменить type поля на `text`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
 
 - [x] **Пустое поле**
   - **Ввод:** Пустое поле
   - **Ожидание:** Вывод соответствующего уведомления о невозможности пустой цены
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
 
 ###### Описание
 
 - [x] **Пустое поле**
   - **Ввод:** Пустое поле
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
+
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
   - **Фактический результат:** Выделилось красным поле "Описание".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
 
 - [x] **Длинное описание (html)**
-  - **Ввод:** 
+  - **Ввод:**
   ```md
   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   ```
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
   - **Фактический результат:** Выделилось красным поле "Описание".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img_1.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -248,26 +248,26 @@
 - [ ] **Введены битые символы** <a name="bug-4.1-008"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
+    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление удалось создать
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
+    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введены сильно битые символы** <a name="bug-4.1-009"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_2.png)
+    ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_2.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Несколько ошибок с бекенда, ошибка открытия объявления, хотя на фронте отрабатывает как для созданного
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
+    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
+    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
 
 ###### Фотография
 
@@ -276,7 +276,7 @@
 - [ ] **Попытка добавить png** <a name="bug-4.1-010"></a>
   - **Ввод:** png и zip (адрес - `img/4.1/Создание объявления/Негативные сценарии/Фотография/png-zip/test.zip`)
 
-    ![portal.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
+    ![portal.png](img/4.1/Создание%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобного типа
   - **Фактический результат:** Объявление удалось создать
@@ -288,7 +288,7 @@
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
   - **Фактический результат:** Выделилось красным поле "Адрес".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
 
 - [x] **Длинный адрес (html)**
   - **Ввод:**
@@ -296,12 +296,12 @@
   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   ```
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
   - **Фактический результат:** Выделилось красным поле "Адрес".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
+  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
 
 - [x] **Адрес содержит код**
   - **Ввод:**
@@ -311,33 +311,33 @@
   - **Ожидание:** Создание объявления без выведения на экран фразы "Hello"
   - **Фактический результат:** Создание объявления без выведения на экран фразы "Hello"
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.1-011"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
+    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Несколько ошибок с бекенда, ошибка открытия объявления, хотя на фронте отрабатывает как для созданного
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
+    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
 
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_2.png)
+    ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_2.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введен эмодзи** <a name="bug-4.1-016"></a>
   - **Ввод:** `😀`
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
+    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление создалось
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
+    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
 
 ##### Визуальные
 
@@ -348,7 +348,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-012"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Категория/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Категория/img.png)
 
 ###### Название
 
@@ -357,7 +357,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-013"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Название/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Название/img.png)
 
 ###### Описание
 
@@ -366,7 +366,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-014"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Описание/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Описание/img.png)
 
 ###### Адрес
 
@@ -375,7 +375,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-015"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Адрес/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Адрес/img.png)
 
 ###### Кнопка
 
@@ -384,7 +384,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-017"></a>
   - **Фактический результат:** Кнопка переход на страницу создания уезжает вниз и загораживает кнопку, благодаря которой можем разместить объявление
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Кнопка/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Кнопка/img.png)
 
 ###### Форма
 
@@ -393,7 +393,7 @@
 - [ ] **Уменьшение экрана до ширины 1000px и меньше** <a name="bug-4.1-018"></a>
   - **Фактический результат:** Форма не помещается, появляется горизонтальный ползунок
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Форма/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Форма/img.png)
 
 ###### Оглавление
 
@@ -402,7 +402,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-019"></a>
   - **Фактический результат:** Оглавление прижато к левому краю
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные/Оглавление/img.png)
+  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Оглавление/img.png)
 
 ##### Визуальные в других браузерах
 
@@ -411,68 +411,68 @@
 - [x] **Новых ошибок визуала нет (не считая поля выбора категории)**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
-  
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
+  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
+
+  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
 
 **$${\color{gold}БАГ.}$$**
 
 - [ ] **Поле выбора категории** <a name="bug-4.1-020"></a>
   - **Фактический результат:** Нет окантовки (обводка поля выбора)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
+  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
 
 ###### FireFox
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
+  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
-  
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
-  
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
+  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
+
+  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
+
+  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
+  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
+  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
+  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
+  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
 
 ###### Microsoft Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
+  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
+  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
+  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
+  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
 
 ###### Yandex
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
+  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
+  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
+  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
+  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
 
 <br/><br/><br/>
 
@@ -497,15 +497,15 @@
     - Адрес: _Москва, ул. Тверская, 12_
   - **Действие:** Нажатие на кнопку "Сохранить изменения"
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img.png)
+    ![img.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img.png)
 
   - **Ожидание:**
     - Объявление успешно изменено и отображается в каталоге.
     - Фотография корректно загружена и отображается в карточке товара.
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_1.png)
 
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_2.png)
+    ![img_2.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_2.png)
 
   - **Фактический результат:**
     - [x] Объявление изменено, отображается в каталоге.
@@ -513,14 +513,14 @@
 
 Добавленное изображение:
 
-![basketball-white-background-ai-generated.jpg](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
+![basketball-white-background-ai-generated.jpg](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
 
 - [x] **Цена равная 0**
   - **Ввод:** `0`
   - **Ожидание:** Система пропустила создав объявление с нулевой ценой
   - **Фактический результат:** Система пропустила, изменив в объявлении цену на ноль
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
 
 ##### Негативные сценарии
 
@@ -531,14 +531,14 @@
 - [ ] **Изменить в html значение value на несуществующее**  <a name="bug-4.2-006"></a>
   - **Ввод:** Категория `Женский гардероб` // Перед этим поменять значение value с `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35700`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
 
   - **Ожидание:** Не пропустит, вернет ошибку
   - **Фактический результат:** Не пропустило, вернуло ошибку, но с бекенда.
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
+  ![img_2.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
 
 ###### Название товара
 
@@ -547,7 +547,7 @@
   - **Ожидание:** Подсветить поле ввода: "Название".
   - **Фактический результат:** Выделилось красным поле "Название".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -559,7 +559,7 @@
   - **Ожидание:** Ошибка "Название не должно превышать 45 символов"
   - **Фактический результат:** Система не обработала ошибку, объявление изменилось.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -568,32 +568,32 @@
   ```js
   <script>alert("Hello")</script>
   ```
-  
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img.png)
+
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img.png)
 
   - **Ожидание:** Изменилось объявления без выведения на экран фразы "Hello"
   - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello", но название сменилось на пустое
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img_1.png)
 
 **$${\color{gold}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.2-003"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление удалось изменить
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
 
 - [x] **Эмодзи в названии**
   - **Ввод:** `🙂`
   - **Ожидание:** Изменение объявления с таким названием.
   - **Фактический результат:** Изменение объявления с таким названием.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
 
 ###### Цена
 
@@ -602,68 +602,68 @@
 - [ ] **Ввод символов после изменения типа (html)** <a name="bug-4.2-004"></a>
   - **Ввод:** `test` // Перед этим изменить type поля на `text`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Система пропустила, изменив объявление на нулевую цену
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
 
 - [x] **Отрицательная цена**
   - **Ввод:** `-2`
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
 
   - **Ожидание:** Выделилось красным поле "Цена".
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
 
 - [x] **Битые цифры (html)**
   - **Ввод:** `1` // обработать через https://zalgo.org/ и перед этим изменить type поля на `text`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
 
   - **Ожидание:** Выделилось красным поле "Цена".
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
 
 - [x] **Дробные числа**
   - **Ввод:** `0.55555`
   - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
   - **Фактический результат:** Вывод соответствующего уведомления о невозможности дробной цены
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
 
 - [x] **Дробные числа (html)**
   - **Ввод:** `0.55555` // Перед этим изменить type поля на `text`.
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
 
 - [x] **Пустое поле**
   - **Ввод:** Пустое поле
   - **Ожидание:** Вывод соответствующего уведомления о невозможности пустой цены
   - **Фактический результат:** Выделилось красным поле "Цена".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
 
 ###### Описание
 
 - [x] **Пустое поле**
   - **Ввод:** Пустое поле
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
   - **Фактический результат:** Выделилось красным поле "Описание".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
 
 - [x] **Длинное описание (html)**
   - **Ввод:** // Сначала убрать атрибут `maxlength`
@@ -671,12 +671,12 @@
   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   ```
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
   - **Фактический результат:** Выделилось красным поле "Описание".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img_1.png)
 
 **$${\color{gold}БАГ.}$$**
 
@@ -688,31 +688,31 @@
   - **Ожидание:** Изменение объявления без выведения на экран фразы "Hello"
   - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello", но на пустое значение
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Код/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Код/img.png)
 
 **$${\color{gold}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.2-008"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
+    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление удалось изменить
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
 
 **$${\color{darkorange}БАГ.}$$**
 
 - [ ] **Введены сильно битые символы** <a name="bug-4.2-009"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
+    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Ошибка с бекенда, открывает со старым описанием
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
 
 ###### Фотография
 
@@ -721,14 +721,14 @@
 - [ ] **Попытка добавить png** <a name="bug-4.2-010"></a>
   - **Ввод:** png и zip (адрес - `img/4.2/Редактирование объявления/Негативные сценарии/Фотография/png-zip/test.zip`)
 
-    ![portal.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
+    ![portal.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобного типа
   - **Фактический результат:** Объявление не удалось изменить, но ответ с бекенда, а не фронта
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img.png)
-  
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img_1.png)
+    ![img.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img.png)
+
+    ![img_1.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img_1.png)
 
 ###### Адрес
 
@@ -737,7 +737,7 @@
   - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
   - **Фактический результат:** Выделилось красным поле "Адрес".
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
 
 - [x] **Длинный адрес (html)**
   - **Ввод:**
@@ -745,12 +745,12 @@
   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   ```
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности такого адреса
   - **Фактический результат:** Выделилось красным поле "Адрес".
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
+  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
 
 - [x] **Адрес содержит код**
   - **Ввод:**
@@ -760,31 +760,31 @@
   - **Ожидание:** Изменение объявления без выведения на экран фразы "Hello"
   - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello"
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.2-011"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
+    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Ошибка с бекенда, открывает со старым описанием
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введен эмодзи** <a name="bug-4.2-016"></a>
   - **Ввод:** `😀`
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
+    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Объявление изменилось
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
+    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
 
 ##### Визуальные
 
@@ -795,7 +795,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-012"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Категория/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Категория/img.png)
 
 ###### Название
 
@@ -804,7 +804,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-013"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Название/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Название/img.png)
 
 ###### Описание
 
@@ -813,7 +813,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-014"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Описание/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Описание/img.png)
 
 ###### Адрес
 
@@ -822,7 +822,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-015"></a>
   - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Адрес/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Адрес/img.png)
 
 ###### Кнопка
 
@@ -831,7 +831,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-017"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Кнопка/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Кнопка/img.png)
 
 ###### Форма
 
@@ -840,7 +840,7 @@
 - [ ] **Уменьшение экрана до ширины 1000px и меньше** <a name="bug-4.2-018"></a>
   - **Фактический результат:** Форма не помещается, появляется горизонтальный ползунок
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Форма/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Форма/img.png)
 
 ###### Оглавление
 
@@ -849,7 +849,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-019"></a>
   - **Фактический результат:** Оглавление прижато к левому краю
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные/Оглавление/img.png)
+  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Оглавление/img.png)
 
 ##### Визуальные в других браузерах
 
@@ -858,68 +858,68 @@
 - [x] **Новых ошибок визуала нет (не считая поля выбора категории)**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
+  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
+  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
 
 **$${\color{gold}БАГ.}$$**
 
 - [ ] **Поле выбора категории** <a name="bug-4.2-020"></a>
   - **Фактический результат:** Нет окантовки (обводка поля выбора)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
+  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
 
 ###### FireFox
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
+  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
+  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
+  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
+  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
+  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
+  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
+  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
+  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
 
 ###### Microsoft Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
+  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
+  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
+  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
+  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
 
 ###### Yandex
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
+  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
+  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
+  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
+  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
 
 <br/><br/><br/>
 
@@ -934,7 +934,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.3-001"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.3/Визуальные/image_01.png)
+  ![img.png](./img/4.3/Визуальные/image_01.png)
 
 #### Оплата
 
@@ -943,7 +943,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.3-002"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.3/Визуальные/image_02.png)
+  ![img.png](./img/4.3/Визуальные/image_02.png)
 
 <br/><br/><br/>
 
@@ -955,23 +955,23 @@
   - **Ввод:** `Настольная игра`
   - **Действие:** Нажатие на кнопку поиска
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img.png)
+    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img.png)
 
   - **Ожидание:** Искомый товар отображается в результатах поиска
   - **Фактический результат:** Искомый товар отображается в результатах поиска
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img_1.png)
 
 - [x] **Успешный поиск товара по неполному названию**
   - **Ввод:** `Настольная игр`
   - **Действие:** Нажатие на кнопку поиска
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img.png)
+    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img.png)
 
   - **Ожидание:** Искомый товар отображается в результатах поиска
   - **Фактический результат:** Искомый товар отображается в результатах поиска
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img_1.png)
 
 **$${\color{darkorange}БАГ.}$$**
 
@@ -979,21 +979,21 @@
   - **Ввод:** `Настольная игр`
   - **Действие:** Нажатие на кнопку поиска
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img.png)
+    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img.png)
 
   - **Ввод:** `Настольная игра`
   - **Действие:** Нажатие на кнопку поиска
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_1.png)
 
   - **Действие:** Нажатие на кнопку вернуться
 
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_2.png)
+    ![img_2.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_2.png)
 
   - **Ожидание:** Видно предыдущий запрос
   - **Фактический результат:** Поломалась верстка
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_3.png)
+    ![img_3.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_3.png)
 
 ##### Негативные сценарии
 
@@ -1002,7 +1002,7 @@
 - [ ] **Попытка поиска при незаполненном поле ввода**  <a name="bug-4.4-002"></a>
   - **Ввод:** Пустая строка
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Пустая%20строка/img.png)
+    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Пустая%20строка/img.png)
 
   - **Действие:** Нажатие на кнопку поиска
   - **Ожидание:** Должно подсказать, что ничего не введено (должна появиться красная окантовка вокруг поля поиска)
@@ -1013,41 +1013,41 @@
 - [ ] **Поиск несуществующего товара**  <a name="bug-4.4-003"></a>
   - **Ввод:** `что-то непонятное`
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img.png)
+    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img.png)
 
   - **Действие:** Нажатие на кнопку поиска
   - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
   - **Фактический результат:** Пустая страница
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img_1.png)
 
 **$${\color{darkorange}БАГ.}$$**
 
 - [ ] **Битые символы**  <a name="bug-4.4-004"></a>
   - **Ввод:** `Настольная игра` // обработанное через https://zalgo.org/
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img.png)
+    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img.png)
 
   - **Действие:** Нажатие на кнопку поиска
   - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
   - **Фактический результат:** Ошибка с бекенда
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img_1.png)
 
 **$${\color{darkorange}БАГ.}$$**
 
 - [ ] **Большой запрос**  <a name="bug-4.4-005"></a>
-  - **Ввод:** 
+  - **Ввод:**
   ```md
   ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
   ```
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img.png) 
+  ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img.png)
 
   - **Действие:** Нажатие на кнопку поиска
   - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
   - **Фактический результат:** Ошибка с бекенда
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img_1.png)
+    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img_1.png)
 
 ##### Визуальные
 
@@ -1056,7 +1056,7 @@
 - [ ] **Уменьшение экрана до ширины 1200px** <a name="bug-4.4-006"></a>
   - **Фактический результат:** Пустая кнопка поиска
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные/img.png)
+  ![img.png](./img/4.4/Поиск/Визуальные/img.png)
 
 ##### Визуальные в других браузерах
 
@@ -1065,9 +1065,9 @@
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img.png)
+  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
+  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
 
 ###### FireFox
 
@@ -1076,54 +1076,54 @@
 - [ ] **Поломанный адаптив** <a name="bug-4.4-007"></a>
   - **Фактический результат:** Неверное расположения поля при изменении размера экрана, не всегда занимает все доступное место
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img.png)
+  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
+  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
+  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
+  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
 
-  ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_4.png)
+  ![img_4.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_4.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img.png)
+  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
+  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
+  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
+  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
 
 ###### Microsoft Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
+  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
+  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
+  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
+  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
 
 ###### Yandex
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img.png)
+  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img.png)
 
-  ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
+  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
 
-  ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
+  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
 
-  ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
+  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
 
 <br/><br/><br/>
 
@@ -1131,24 +1131,24 @@
 
 ##### Позитивные сценарии
 
-  - [x] **Успешное оформление заказа**
-    - **Ввод:**
-      - Вид доставки: _Доставка_
-      - ФИО получателя: _Иванов Иван Иванович_
-      - Адрес доставки: _г.Москва, ул.Пушкина, д.15 к.1_
-    - **Действие:** Нажатие на кнопку "Оформить заказ"
+- [x] **Успешное оформление заказа**
+  - **Ввод:**
+    - Вид доставки: _Доставка_
+    - ФИО получателя: _Иванов Иван Иванович_
+    - Адрес доставки: _г.Москва, ул.Пушкина, д.15 к.1_
+  - **Действие:** Нажатие на кнопку "Оформить заказ"
 
-      ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.5/Позитивные%20сценарии/img_0.png)
+    ![img_0.png](./img/4.5/Позитивные%20сценарии/img_0.png)
 
-    - **Ожидание:**
-      - Заказ успешно оформлен
-      - Произошел редирект на страницу с заказами
+  - **Ожидание:**
+    - Заказ успешно оформлен
+    - Произошел редирект на страницу с заказами
 
-        ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.5/Позитивные%20сценарии/img_1.png)
+      ![img_1.png](./img/4.5/Позитивные%20сценарии/img_1.png)
 
-    - **Фактический результат:**
-      - [x] Заказ успешно оформлен
-      - [x] Произошел редирект на страницу с заказами
+  - **Фактический результат:**
+    - [x] Заказ успешно оформлен
+    - [x] Произошел редирект на страницу с заказами
 
 ##### Негативные сценарии
 
@@ -1156,10 +1156,10 @@
 
 **$${\color{gold}БАГ.}$$**
 
-  - [ ]  **Изменить в html значение value на несуществующее** <a name="bug-4.5-001"></a>
-    - **Ввод:** Вид доставки `Доставка` // Перед этим поменять значение value c `delivery` на `delivery111` 
+- [ ]  **Изменить в html значение value на несуществующее** <a name="bug-4.5-001"></a>
+  - **Ввод:** Вид доставки `Доставка` // Перед этим поменять значение value c `delivery` на `delivery111`
 
-      ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_0.png)
+  ![img_0.png](./img/4.5/Негативные%20сценарии/img_0.png)
 
     - **Ожидание:** Не пропустит, вернет ошибку
     - **Фактический результат:** Не пропустило, вернуло ошибку, но с бекенда
@@ -1168,120 +1168,120 @@
 
 ###### ФИО получателя
 
-  - [x] **Поле не заполнено**
-    - **Ввод:** пустое поле
-    - **Ожидание:** Подсветить поле ввода: "ФИО получателя"
-    - **Фактический результат:** Появилась подсказка `Заполните это поле.` для поля "ФИО получателя".
+- [x] **Поле не заполнено**
+  - **Ввод:** пустое поле
+  - **Ожидание:** Подсветить поле ввода: "ФИО получателя"
+  - **Фактический результат:** Появилась подсказка `Заполните это поле.` для поля "ФИО получателя".
 
-      ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_2.png)
+    ![img_2.png](./img/4.5/Негативные%20сценарии/img_2.png)
 
-  - [x] **Убрать в html аттрибут required для поля**
-    - **Ввод:** пустое поле // Перед этим убрать аттрибут `required`
+- [x] **Убрать в html аттрибут required для поля**
+  - **Ввод:** пустое поле // Перед этим убрать аттрибут `required`
 
-      ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_3.png)
+    ![img_3.png](./img/4.5/Негативные%20сценарии/img_3.png)
 
-    - **Ожидание:** Подсветить поле ввода "ФИО получателя"
-    - **Фактический результат:** Подсветилось красным поле "ФИО получателя".
+  - **Ожидание:** Подсветить поле ввода "ФИО получателя"
+  - **Фактический результат:** Подсветилось красным поле "ФИО получателя".
 
-      ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_4.png)
+    ![img_4.png](./img/4.5/Негативные%20сценарии/img_4.png)
 
 **$${\color{gold}БАГ.}$$**
 
-  - [ ] **Ввод слишком длинный (250 символов)** <a name="bug-4.5-002"></a>
-    - **Ввод:**
-    ```md
-    оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо
-    ```
-    - **Ожидание:** Ошибка "Длина ФИО не должна превышать N символов"
-    - **Фактический результат:** Вернулась ошибка с бэкенда
+- [ ] **Ввод слишком длинный (250 символов)** <a name="bug-4.5-002"></a>
+  - **Ввод:**
+  ```md
+  оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо
+  ```
+  - **Ожидание:** Ошибка "Длина ФИО не должна превышать N символов"
+  - **Фактический результат:** Вернулась ошибка с бэкенда
 
-      ![img_5.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_5.png)
+    ![img_5.png](./img/4.5/Негативные%20сценарии/img_5.png)
 
 **$${\color{gold}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.5-003"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img_6.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_6.png)
+    ![img_6.png](./img/4.5/Негативные%20сценарии/img_6.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Заказ успешно создался
 
-    ![img_7.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_7.png)
+    ![img_7.png](./img/4.5/Негативные%20сценарии/img_7.png)
 
 - [x] **Эмодзи в поле ввода**
   - **Ввод:** `🙂`
 
-    ![img_8.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_8.png)
+    ![img_8.png](./img/4.5/Негативные%20сценарии/img_8.png)
 
   - **Ожидание:** Создание заказа с таким ФИО
   - **Фактический результат:** Создание заказа с таким ФИО
 
-    ![img_9.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_9.png)
+    ![img_9.png](./img/4.5/Негативные%20сценарии/img_9.png)
 
 ###### Адрес доставки
 
-  - [x] **Поле не заполнено**
-    - **Ввод:** пустое поле
-    - **Ожидание:** Подсветить поле ввода: "Адрес доставки"
-    - **Фактический результат:** Появилась подсказка `Заполните это поле.` для поля "Адрес доставки".
+- [x] **Поле не заполнено**
+  - **Ввод:** пустое поле
+  - **Ожидание:** Подсветить поле ввода: "Адрес доставки"
+  - **Фактический результат:** Появилась подсказка `Заполните это поле.` для поля "Адрес доставки".
 
-      ![img_10.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_10.png)
+    ![img_10.png](./img/4.5/Негативные%20сценарии/img_10.png)
 
-  - [x] **Убрать в html аттрибут required для поля**
-    - **Ввод:** пустое поле // Перед этим убрать аттрибут `required`
+- [x] **Убрать в html аттрибут required для поля**
+  - **Ввод:** пустое поле // Перед этим убрать аттрибут `required`
 
-      ![img_11.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_11.png)
+    ![img_11.png](./img/4.5/Негативные%20сценарии/img_11.png)
 
-    - **Ожидание:** Подсветить поле ввода "Адрес доставки"
-    - **Фактический результат:** Подсветилось красным поле "Адрес доставки".
+  - **Ожидание:** Подсветить поле ввода "Адрес доставки"
+  - **Фактический результат:** Подсветилось красным поле "Адрес доставки".
 
-      ![img_12.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_12.png)
+    ![img_12.png](./img/4.5/Негативные%20сценарии/img_12.png)
 
 **$${\color{gold}БАГ.}$$**
 
-  - [ ] **Ввод слишком длинный (250 символов)** <a name="bug-4.5-004"></a>
-    - **Ввод:**
-    ```md
-    оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо
-    ```
-    - **Ожидание:** Ошибка "Длина адреса не должна превышать N символов"
-    - **Фактический результат:** Вернулась ошибка с бэкенда
+- [ ] **Ввод слишком длинный (250 символов)** <a name="bug-4.5-004"></a>
+  - **Ввод:**
+  ```md
+  оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо
+  ```
+  - **Ожидание:** Ошибка "Длина адреса не должна превышать N символов"
+  - **Фактический результат:** Вернулась ошибка с бэкенда
 
-      ![img_13.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_13.png)
+    ![img_13.png](./img/4.5/Негативные%20сценарии/img_13.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Введены битые символы** <a name="bug-4.5-005"></a>
   - **Ввод:** `Hello` // обработанное через https://zalgo.org/
 
-    ![img_14.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_14.png)
+    ![img_14.png](./img/4.5/Негативные%20сценарии/img_14.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Вернулась ошибка с бэкенда
 
-    ![img_15.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_15.png)
+    ![img_15.png](./img/4.5/Негативные%20сценарии/img_15.png)
 
 **$${\color{red}БАГ.}$$**
 
 - [ ] **Эмодзи в поле ввода** <a name="bug-4.5-006"></a>
   - **Ввод:** `🙂`
 
-    ![img_16.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_16.png)
+    ![img_16.png](./img/4.5/Негативные%20сценарии/img_16.png)
 
   - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
   - **Фактический результат:** Создание заказа с таким адресом
 
-    ![img_17.png](../../untitled2/homework-1-spring-2025/img/4.5/Негативные%20сценарии/img_17.png)
+    ![img_17.png](./img/4.5/Негативные%20сценарии/img_17.png)
 
 ##### Визуальные
 
 **$${\color{gold}БАГ.}$$**
 
-  - [ ] **Уменьшение ширины экрана до 380px** <a name="bug-4.5-007"></a>
-     - **Фактический результат:** Выход кнопки за границы блока 
+- [ ] **Уменьшение ширины экрана до 380px** <a name="bug-4.5-007"></a>
+  - **Фактический результат:** Выход кнопки за границы блока
 
-      ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_0.png)
+  ![img_0.png](./img/4.5/Визуальные/img_0.png)
 
 ##### Визуальные в других браузерах
 
@@ -1290,24 +1290,24 @@
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_1.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_2.png)
+    ![img_1.png](./img/4.5/Визуальные/img_1.png)
+    ![img_2.png](./img/4.5/Визуальные/img_2.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_3.png)
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_4.png)
+    ![img_3.png](./img/4.5/Визуальные/img_3.png)
+    ![img_4.png](./img/4.5/Визуальные/img_4.png)
 
 ###### Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_5.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_5.png)
-    ![img_6.png](../../untitled2/homework-1-spring-2025/img/4.5/Визуальные/img_6.png)
+    ![img_5.png](./img/4.5/Визуальные/img_5.png)
+    ![img_6.png](./img/4.5/Визуальные/img_6.png)
 
 ### 4.6 Заказы
 
@@ -1323,10 +1323,10 @@
 
 **$${\color{gold}БАГ.}$$**
 
-  - [ ] **Уменьшение ширины экрана до 280px** <a name="bug-4.6-001"></a>
-     - **Фактический результат:** Выход номера телефона за границы блока 
+- [ ] **Уменьшение ширины экрана до 280px** <a name="bug-4.6-001"></a>
+  - **Фактический результат:** Выход номера телефона за границы блока
 
-        ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_0.png)
+    ![img_0.png](./img/4.6/Визуальные/img_0.png)
 
 ##### Визуальные в других браузерах
 
@@ -1335,24 +1335,24 @@
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_1.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_2.png)
+    ![img_1.png](./img/4.6/Визуальные/img_1.png)
+    ![img_2.png](./img/4.6/Визуальные/img_2.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_3.png)
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_4.png)
+    ![img_3.png](./img/4.6/Визуальные/img_3.png)
+    ![img_4.png](./img/4.6/Визуальные/img_4.png)
 
 ###### Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_5.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_5.png)
-    ![img_6.png](../../untitled2/homework-1-spring-2025/img/4.6/Визуальные/img_6.png)
+    ![img_5.png](./img/4.6/Визуальные/img_5.png)
+    ![img_6.png](./img/4.6/Визуальные/img_6.png)
 
 ### 4.7 Каталог и главная страница
 
@@ -1363,30 +1363,30 @@
   - **Ожидание:** Подгрузка новых объявлений
   - **Фактический результат:** Подгрузка новых объявлений
 
-    ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.7/Позитивные%20сценарии/img_0.png)
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.7/Позитивные%20сценарии/img_1.png)
+    ![img_0.png](./img/4.7/Позитивные%20сценарии/img_0.png)
+    ![img_1.png](./img/4.7/Позитивные%20сценарии/img_1.png)
 
 - [x] **Переход к товарам выбранной категории**
   - **Действие:** Нажатие на ссылку категории
 
-    ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.7/Позитивные%20сценарии/img_2.png)
+    ![img_0.png](./img/4.7/Позитивные%20сценарии/img_2.png)
 
   - **Ожидание:** Редирект на страницу категории
   - **Фактический результат:** Редирект на страницу категории
 
-    ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.7/Позитивные%20сценарии/img_3.png)
+    ![img_0.png](./img/4.7/Позитивные%20сценарии/img_3.png)
 
 ##### Негативные сценарии
 
 - [x]  **Изменить в html значение href на несуществующее**
-    - **Действие:** Нажатие на ссылку категории // Перед этим поменять значение href c `/category/d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `/category/11` 
+  - **Действие:** Нажатие на ссылку категории // Перед этим поменять значение href c `/category/d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `/category/11`
 
-      ![img_0.png](../../untitled2/homework-1-spring-2025/img/4.7/Негативные%20сценарии/img_0.png)
+    ![img_0.png](./img/4.7/Негативные%20сценарии/img_0.png)
 
-    - **Ожидание:** Появится сообщение о том, что такой категории не существует
-    - **Фактический результат:** Появилось сообщение о том, что такой категории не существует
+  - **Ожидание:** Появится сообщение о том, что такой категории не существует
+  - **Фактический результат:** Появилось сообщение о том, что такой категории не существует
 
-      ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.7/Негативные%20сценарии/img_1.png)
+    ![img_1.png](./img/4.7/Негативные%20сценарии/img_1.png)
 
 ##### Визуальные
 
@@ -1399,24 +1399,24 @@
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_1.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_2.png)
+    ![img_1.png](./img/4.7/Визуальные/img_1.png)
+    ![img_2.png](./img/4.7/Визуальные/img_2.png)
 
 ###### Opera
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_3.png)
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_4.png)
+    ![img_3.png](./img/4.7/Визуальные/img_3.png)
+    ![img_4.png](./img/4.7/Визуальные/img_4.png)
 
 ###### Edge
 
 - [x] **Новых ошибок визуала нет**
   - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
 
-    ![img_5.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_5.png)
-    ![img_6.png](../../untitled2/homework-1-spring-2025/img/4.7/Визуальные/img_6.png)
+    ![img_5.png](./img/4.7/Визуальные/img_5.png)
+    ![img_6.png](./img/4.7/Визуальные/img_6.png)
 
 ### 4.8 Страница товара (чужая)
 
@@ -1429,7 +1429,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.8-001"></a>
   - **Фактический результат:** Выход за границы экрана
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.8/Визуальные/image.png)
+  ![img.png](./img/4.8/Визуальные/image.png)
 
 <br/><br/><br/>
 
@@ -1440,147 +1440,147 @@
 - [x] **Успешное добавление товара в корзину для авторизованного пользователя**
   - **Действие:** Нажатие на кнопку "В корзину"
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_0.png)
+    ![img.png](./img/4.9/Позитивные%20сценарии/img_0.png)
 
   - **Ожидание:** Удалось успешно добавить товар в корзину
   - **Фактический результат:** Удалось успешно добавить товар в корзину
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_1.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_2.png)
+    ![img_1.png](./img/4.9/Позитивные%20сценарии/img_1.png)
+    ![img_2.png](./img/4.9/Позитивные%20сценарии/img_2.png)
 
 - [x] **Добавление товара в корзину для неавторизованного пользователя**
   - **Действие:** Нажатие на кнопку "В корзину"
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_3.png)
-    
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_3.png)
+
   - **Ожидание:** Появление модального окна для авторизации
   - **Фактический результат:** Появление модального окна для авторизации
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_4.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_4.png)
 
 - [x] **Переход в корзину с главной страницы**
   - **Действие:** Нажатие на значок "корзина" в правом верхнем углу
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_17.png)
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_17.png)
 
   - **Ожидание:** Отображение страницы корзины. Так как корзина пустая - отображение пустой корзины и кнопки "За покупками"
   - **Фактический результат:** Отображение страницы корзины. Так как корзина пустая - отображение пустой корзины и кнопки "За покупками"
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_18.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_18.png)
 
   - **Ожидание:** Отображение страницы корзины. Так как в корзине есть товары - отображение моей корзины
   - **Фактический результат:** Отображение страницы корзины. Так как в корзине есть товары - отображение моей корзины
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_19.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_19.png)
 
 - [x] **Переход со страницы корзины на главную**
   - **Действие:** Нажатие на кнопку "За покупками"
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_18.png)
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_18.png)
 
   - **Ожидание:** Отображение главной страницы с объявлениями
   - **Фактический результат:** Отображение главной страницы с объявлениями
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_17.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_17.png)
 
 - [x] **Оформление покупки для одного товара**
   - **Действие:** Нажатие на кнопку "Перейти к оформлению"
 
-    ![img_8.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_8.png)
-    
+    ![img_8.png](./img/4.9/Позитивные%20сценарии/img_8.png)
+
   - **Ожидание:** Появление модального окна для заполнения данных о доставке
   - **Фактический результат:** Появление модального окна для заполнения данных о доставке
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_7.png)
-  
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_7.png)
+
   - **Действие:** Заполнение данных корректными данными
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_9.png)
-    
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_9.png)
+
   - **Ожидание:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером
   - **Фактический результат:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером
-  
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_10.png)
+
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_10.png)
 
 - [x] **Выбор варианта получения с доставкой**
   - **Действие:** Выбор в выпадающем списке варианта "доставка"
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_11.png)
-    
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_11.png)
+
   - **Ожидание:** Появление поля для ввода адреса
   - **Фактический результат:** Появление поля для ввода адреса
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_8.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_8.png)
 
 - [x] **Выбор варианта получения у продавца**
   - **Действие:** Выбор в выпадающем списке варианта "заберу у продавца"
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_11.png)
-    
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_11.png)
+
   - **Ожидание:** Поля для ввода адреса нет
   - **Фактический результат:** Поля для ввода адреса нет
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_12.png)
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_12.png)
 
 - [x] **Оформление покупки для нескольких товаров от разных продавцов**
   - **Действие:** Нажатие на кнопку "Перейти к оформлению"
 
-    ![img_8.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_13.png)
-    
+    ![img_8.png](./img/4.9/Позитивные%20сценарии/img_13.png)
+
   - **Ожидание:** Появление модального окна для заполнения данных о доставке
   - **Фактический результат:** Появление модального окна для заполнения данных о доставке
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_7.png)
-  
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_7.png)
+
   - **Действие:** Заполнение данных корректными данными
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_9.png)
-    
-  - **Ожидание:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат разным продавцам - для каждого товара каждого продавца создается отдельный заказ. 
-  - **Фактический результат:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат разным продавцам - для каждого товара каждого продавца создается отдельный заказ. 
-  
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_14.png)
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_9.png)
+
+  - **Ожидание:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат разным продавцам - для каждого товара каждого продавца создается отдельный заказ.
+  - **Фактический результат:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат разным продавцам - для каждого товара каждого продавца создается отдельный заказ.
+
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_14.png)
 
 - [x] **Оформление покупки для нескольких товаров от одного продавца**
-**$${\color{red}БАГ.}$$** <a name="bug-4.9-001"></a>
+  **$${\color{red}БАГ.}$$** <a name="bug-4.9-001"></a>
 
-  - **Действие:** Нажатие на кнопку "Перейти к оформлению" 
+  - **Действие:** Нажатие на кнопку "Перейти к оформлению"
 
-    ![img_8.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_15.png)
-    
+    ![img_8.png](./img/4.9/Позитивные%20сценарии/img_15.png)
+
   - **Ожидание:** Появление модального окна для заполнения данных о доставке
   - **Фактический результат:** Появление модального окна для заполнения данных о доставке
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_7.png)
-  
+    ![img_4.png](./img/4.9/Позитивные%20сценарии/img_7.png)
+
   - **Действие:** Заполнение данных корректными данными
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_9.png)
-    
-  - **Ожидание:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат одному продавцу - создается общий заказ для этих двух товаров. 
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_9.png)
+
+  - **Ожидание:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. Так как товары принадлежат одному продавцу - создается общий заказ для этих двух товаров.
   - **Фактический результат:** Переход на страницу заказы, где отображается заказ с присвоенным ему номером. В заказ попал только один из товаров. Второй товар не учитывается.
-  
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.9/Позитивные%20сценарии/img_16.png)
+
+    ![img_3.png](./img/4.9/Позитивные%20сценарии/img_16.png)
 
 ##### Негативные сценарии
 
 - [ ] **Попытка повторно добавить товар в корзину**
   - **Действие:** Нажатие на кнопку "В корзину"
 
-    ![img_5.png](../../untitled2/homework-1-spring-2025/img/4.9/Негативные%20сценарии/img_5.png)
+    ![img_5.png](./img/4.9/Негативные%20сценарии/img_5.png)
 
   - **Ожидание:** После добавления товара в корзину текст кнопки меняется на "Товар уже в корзине", по кнопке осуществляется переход в корзину
   - **Фактический результат:** После добавления товара в корзину текст кнопки меняется на "Товар уже в корзине", по кнопке осуществляется переход в корзину
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Негативные%20сценарии/img_5.png)
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.9/Негативные%20сценарии/img_6.png)
+    ![img_4.png](./img/4.9/Негативные%20сценарии/img_5.png)
+    ![img_4.png](./img/4.9/Негативные%20сценарии/img_6.png)
 
 #### Визуальные
 
 - [ ] **Уменьшение экрана до ширины 1000px** **$${\color{red}БАГ.}$$**  <a name="bug-4.9-001"></a>
-  - **Фактический результат:** Пропадает кнопка "корзина" 
+  - **Фактический результат:** Пропадает кнопка "корзина"
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.9/Визуальные/img_1.png)
+  ![img.png](./img/4.9/Визуальные/img_1.png)
 
 
 ### 4.10 Избранное
@@ -1590,35 +1590,35 @@
 - [x] **Успешное добавление товара в избранное с главной страницы**
   - **Действие:** Нажатие на кнопку со значком "сердце"
 
-    ![img.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_1.png)
+    ![img.png](./img/4.10/Позитивные%20сценарии/img_1.png)
 
   - **Ожидание:** Кнопка добавления в избранное (иконка сердца) окрасилась в красный цвет, товар добавлен в избранное
   - **Фактический результат:** Кнопка добавления в избранное (иконка сердца) окрасилась в красный цвет, товар добавлен в избранное
 
-    ![img_1.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_1_1.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_2.png)
+    ![img_1.png](./img/4.10/Позитивные%20сценарии/img_1_1.png)
+    ![img_2.png](./img/4.10/Позитивные%20сценарии/img_2.png)
 
 - [x] **Успешное добавление товара в корзину со страницы товара**
   - **Действие:** Нажатие на кнопку со значком "сердце"
 
-    ![img_3.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_3.png)
-    
+    ![img_3.png](./img/4.10/Позитивные%20сценарии/img_3.png)
+
   - **Ожидание:** Кнопка добавления в избранное (иконка сердца) окрасилась в красный цвет, товар добавлен в избранное
   - **Фактический результат:** Кнопка добавления в избранное (иконка сердца) окрасилась в красный цвет, товар добавлен в избранное
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_4.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_2.png)
+    ![img_4.png](./img/4.10/Позитивные%20сценарии/img_4.png)
+    ![img_2.png](./img/4.10/Позитивные%20сценарии/img_2.png)
 
 - [x] **Обновление количества добавления товара в избранное**
   - **Действие:** Добавление товара в избранное с аккаунта "А"
   - **Действие:** Вход с аккаунта "Б"
   - **Действие:** Добавление товара в избранное с аккаунта "Б"
-    
+
   - **Ожидание:** Счетчик избранного увеличился на 1. После добавления в избранное с аккаунта "Б" счетчик количества добавлений товара в избранное пользователями увеличился еще на один.
   - **Фактический результат:** Счетчик избранного увеличился на 1. После добавления в избранное с аккаунта "Б" счетчик количества добавлений товара в избранное пользователями увеличился еще на один.
 
-    ![img_4.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_5.png)
-    ![img_2.png](../../untitled2/homework-1-spring-2025/img/4.10/Позитивные%20сценарии/img_6.png)
+    ![img_4.png](./img/4.10/Позитивные%20сценарии/img_5.png)
+    ![img_2.png](./img/4.10/Позитивные%20сценарии/img_6.png)
 
 #### Негативные сценарии
 
@@ -1629,7 +1629,7 @@
 - [ ] **Уменьшение экрана до ширины 300px** **$${\color{red}БАГ.}$$**  <a name="bug-4.10-001"></a>
   - **Фактический результат:** Поломалась верстка - кнопка добавления в избранное (иконка сердца) не на одном уровне с ценой
 
-  ![img.png](../../untitled2/homework-1-spring-2025/img/4.10/Визуальные/img.png)
+  ![img.png](./img/4.10/Визуальные/img.png)
 
 
 ---
