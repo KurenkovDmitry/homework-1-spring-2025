@@ -36,890 +36,121 @@
 
 ## 4. Тестирование <a name="тестирование"></a>
 
-### 4.1 Добавление объявления (товара)
+### 4.1 Отчет о тестировании страницы создания и редактирования объявления
 
-#### Создание объявления
+#### 4.1.1 Страница создания объявления
 
-##### Позитивные сценарии
+##### 4.1.1.1 Доступ к странице
+- **Переход через хедер (для авториозванного пользователя):**
+  - Клик на кнопку "Добавить объявление" в хедере ведет на страницу создания объявления.
+  - **Результат:** Переход работает корректно.
 
-**$${\color{darkorange}БАГ.}$$**
+##### 4.1.1.2 Форма создания объявления
+- **Поля формы:**
+  - Категория (выпадающий список)
+  - Название товара (текстовое поле)
+  - Цена (числовое поле)
+  - Описание (текстовое поле)
+  - Фотография (загрузка файла)
+  - Адрес (текстовое поле)
+- **Кнопка "Разместить объявление":**
+  - Отправляет форму и создает объявление.
 
-- [ ] **Успешное добавление товара** <a name="bug-4.1-001"></a>
+##### 4.1.1.3 Взаимодействия с компонентами
+###### Общее
+- **Успешное добавление товара:**
   - **Ввод:**
     - Категория: _Спорт и отдых_
     - Название товара: _Jogel Мяч баскетбольный JB-100_
     - Цена: _999_
-    - Описание:
-    ```md
-    Топовый мяч, хорошо отскакивает от большинства поверхностей. Хорошо подходит для стритбола и как для начала занятий баскетболом, так и для профессиональной деятельности.
-    ```
-    - Фотография: _Файл изображения см. ниже_
+    - Описание:  
+      ```
+      Топовый мяч, хорошо отскакивает от большинства поверхностей. Хорошо подходит для стритбола и как для начала занятий баскетболом, так и для профессиональной деятельности.
+      ```
+    - Фотография: _Файл изображения_
     - Адрес: _Москва, ул. Тверская, 12_
-  - **Действие:** Нажатие на кнопку "Разместить объявление"
-
-    ![img.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img.png)
-
-  - **Ожидание:**
-    - Объявление успешно создано и отображается в каталоге.
-    - Фотография корректно загружена и отображается в карточке товара.
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img_1.png)
-
-    ![img_2.png](./img/4.1/Создание%20объявления/Позитивный%20сценарий/img_2.png)
-
-  - **Фактический результат:**
-    - [x] Объявление создано, отображается в каталоге.
-    - [ ] Изображение не отображается (отсутствует или сломанный значок).
-
-Добавленное изображение:
-
-![basketball-white-background-ai-generated.jpg](./img/4.1/Создание%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
-
-- [x] **Цена равная 0**
-  - **Ввод:** `0`
-  - **Ожидание:** Система пропустила создав объявление с нулевой ценой
-  - **Фактический результат:** Система пропустила создав объявление с нулевой ценой
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
-
-##### Негативные сценарии
-
-###### Категория
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Изменить в html значение value на несуществующее**  <a name="bug-4.1-006"></a>
-  - **Ввод:** Категория `Женский гардероб` // Перед этим поменять значение value с `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35700`.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
-
-  - **Ожидание:** Не пропустит, вернет ошибку
-  - **Фактический результат:** Не пропустило, вернуло ошибку, но с бекенда.
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
-
-  ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
-
-###### Название товара
-
-- [x] **Название не заполнено**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Подсветить поле ввода: "Название".
-  - **Фактический результат:** Выделилось красным поле "Название".
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Название слишком длинное (> 45 символов)** <a name="bug-4.1-002"></a>
-  - **Ввод:**
-  ```md
-  оооооооооооооооооооооооооооооооооооооооооооооооооо
-  ```
-  - **Ожидание:** Ошибка "Название не должно превышать 45 символов"
-  - **Фактический результат:** Система не обработала ошибку, объявление разместилось.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Название содержит код** <a name="bug-4.1-005"></a>
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-  - **Ожидание:** Создание объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Создание объявления без выведения на экран фразы "Hello", но с пустым названием
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.1-003"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление удалось создать
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
-
-- [x] **Эмодзи в названии**
-  - **Ввод:** `🙂`
-  - **Ожидание:** Создание объявления с таким названием.
-  - **Фактический результат:** Создание объявления с таким названием.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
-
-###### Цена
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Ввод символов после изменения типа (html)** <a name="bug-4.1-004"></a>
-  - **Ввод:** `test` // Перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Система пропустила создав объявление с нулевой ценой
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
-
-- [x] **Отрицательная цена**
-  - **Ввод:** `-2`
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
-
-  - **Ожидание:** Выделилось красным поле "Цена".
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
-
-- [x] **Битые цифры (html)**
-  - **Ввод:** `1` // обработать через https://zalgo.org/ и перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
-
-  - **Ожидание:** Выделилось красным поле "Цена".
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
-
-- [x] **Дробные числа**
-  - **Ввод:** `0.55555`
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
-  - **Фактический результат:** Вывод соответствующего уведомления о невозможности дробной цены
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
-
-- [x] **Дробные числа (html)**
-  - **Ввод:** `0.55555` // Перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности пустой цены
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
-
-###### Описание
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
-  - **Фактический результат:** Выделилось красным поле "Описание".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
-
-- [x] **Длинное описание (html)**
-  - **Ввод:**
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
-  - **Фактический результат:** Выделилось красным поле "Описание".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Длинное%20описание%20(html)/img_1.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Описание содержит код** <a name="bug-4.1-007"></a>
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-  - **Ожидание:** Создание объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Создание объявления без выведения на экран фразы "Hello", но с пустым описанием
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.1-008"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление удалось создать
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Введены сильно битые символы** <a name="bug-4.1-009"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_2.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Несколько ошибок с бекенда, ошибка открытия объявления, хотя на фронте отрабатывает как для созданного
-
-    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
-
-###### Фотография
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Попытка добавить png** <a name="bug-4.1-010"></a>
-  - **Ввод:** png и zip (адрес - `img/4.1/Создание объявления/Негативные сценарии/Фотография/png-zip/test.zip`)
-
-    ![portal.png](img/4.1/Создание%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобного типа
-  - **Фактический результат:** Объявление удалось создать
-
-###### Адрес
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
-  - **Фактический результат:** Выделилось красным поле "Адрес".
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
-
-- [x] **Длинный адрес (html)**
-  - **Ввод:**
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
-  - **Фактический результат:** Выделилось красным поле "Адрес".
-
-  ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
-
-- [x] **Адрес содержит код**
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-  - **Ожидание:** Создание объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Создание объявления без выведения на экран фразы "Hello"
-
-  ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.1-011"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Несколько ошибок с бекенда, ошибка открытия объявления, хотя на фронте отрабатывает как для созданного
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
-
-    ![img_2.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_2.png)
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Введен эмодзи** <a name="bug-4.1-016"></a>
-  - **Ввод:** `😀`
-
-    ![img.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление создалось
-
-    ![img_1.png](./img/4.1/Создание%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
-
-##### Визуальные
-
-###### Категория
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-012"></a>
-  - **Фактический результат:** Выход за границы экрана
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Категория/img.png)
-
+  - **Действие:** Нажатие на кнопку "Разместить объявление".
+  - **Ожидание:** Объявление создано и отображается в каталоге, фотография загружена корректно.
+  - **Результат:**  
+    - Объявление создано и отображается в каталоге.
 ###### Название
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-013"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Название/img.png)
-
-###### Описание
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-014"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Описание/img.png)
-
-###### Адрес
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-015"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Адрес/img.png)
-
-###### Кнопка
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-017"></a>
-  - **Фактический результат:** Кнопка переход на страницу создания уезжает вниз и загораживает кнопку, благодаря которой можем разместить объявление
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Кнопка/img.png)
-
-###### Форма
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 1000px и меньше** <a name="bug-4.1-018"></a>
-  - **Фактический результат:** Форма не помещается, появляется горизонтальный ползунок
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Форма/img.png)
-
-###### Оглавление
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.1-019"></a>
-  - **Фактический результат:** Оглавление прижато к левому краю
-
-  ![img.png](./img/4.1/Создание%20объявления/Визуальные/Оглавление/img.png)
-
-##### Визуальные в других браузерах
-
-###### Safari
-
-- [x] **Новых ошибок визуала нет (не считая поля выбора категории)**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
-
-  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Поле выбора категории** <a name="bug-4.1-020"></a>
-  - **Фактический результат:** Нет окантовки (обводка поля выбора)
-
-  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
-
-###### FireFox
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
-
-  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
-
-  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
-
-  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
-
-###### Opera
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
-
-  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
-
-  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
-
-  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
-
-###### Microsoft Edge
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
-
-  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
-
-  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
-
-  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
-
-###### Yandex
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
-
-  ![img_1.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
-
-  ![img_2.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
-
-  ![img_3.png](img/4.1/Создание%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
-
-<br/><br/><br/>
-
-### 4.2 Редактирование объявления
-
-#### Редактирование объявления
-
-##### Позитивные сценарии
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Успешное редактирование объявления** <a name="bug-4.2-001"></a>
-  - **Ввод:**
-    - Категория: _Спорт и отдых_
-    - Название товара: _Jogel Мяч баскетбольный JB-100_
-    - Цена: _999_
-    - Описание:
-    ```md
-    Топовый мяч, хорошо отскакивает от большинства поверхностей. Хорошо подходит для стритбола и как для начала занятий баскетболом, так и для профессиональной деятельности.
-    ```
-    - Фотография: _Файл изображения см. ниже_
-    - Адрес: _Москва, ул. Тверская, 12_
-  - **Действие:** Нажатие на кнопку "Сохранить изменения"
-
-    ![img.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img.png)
-
-  - **Ожидание:**
-    - Объявление успешно изменено и отображается в каталоге.
-    - Фотография корректно загружена и отображается в карточке товара.
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_1.png)
-
-    ![img_2.png](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/img_2.png)
-
-  - **Фактический результат:**
-    - [x] Объявление изменено, отображается в каталоге.
-    - [ ] Изображение не отображается (отсутствует или сломанный значок).
-
-Добавленное изображение:
-
-![basketball-white-background-ai-generated.jpg](./img/4.2/Редактирование%20объявления/Позитивный%20сценарий/basketball-white-background-ai-generated.jpg)
-
-- [x] **Цена равная 0**
-  - **Ввод:** `0`
-  - **Ожидание:** Система пропустила создав объявление с нулевой ценой
-  - **Фактический результат:** Система пропустила, изменив в объявлении цену на ноль
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Нулевая%20цена/img.png)
-
-##### Негативные сценарии
-
-###### Категория
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Изменить в html значение value на несуществующее**  <a name="bug-4.2-006"></a>
-  - **Ввод:** Категория `Женский гардероб` // Перед этим поменять значение value с `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35748` на `d4d10f10-4f9a-4bd5-ab1e-d2fc3ed35700`.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img.png)
-
-  - **Ожидание:** Не пропустит, вернет ошибку
-  - **Фактический результат:** Не пропустило, вернуло ошибку, но с бекенда.
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_1.png)
-
-  ![img_2.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Категория/Изменить%20value/img_2.png)
-
-###### Название товара
-
-- [x] **Название не заполнено**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Подсветить поле ввода: "Название".
-  - **Фактический результат:** Выделилось красным поле "Название".
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Пустое%20поле/img.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Название слишком длинное (> 45 символов)** <a name="bug-4.2-002"></a>
-  - **Ввод:**
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-  - **Ожидание:** Ошибка "Название не должно превышать 45 символов"
-  - **Фактический результат:** Система не обработала ошибку, объявление изменилось.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Название%20слишком%20длинное/img.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Название содержит код** <a name="bug-4.2-005"></a>
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img.png)
-
-  - **Ожидание:** Изменилось объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello", но название сменилось на пустое
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Содержит%20код/img_1.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.2-003"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление удалось изменить
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Введены%20битые%20символы/img_1.png)
-
-- [x] **Эмодзи в названии**
-  - **Ввод:** `🙂`
-  - **Ожидание:** Изменение объявления с таким названием.
-  - **Фактический результат:** Изменение объявления с таким названием.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Название%20товара/Эмодзи/img.png)
-
+- **Эмодзи в названии:**
+  - **Ввод:** `🙂`.
+  - **Ожидание:** Система принимает эмодзи.
+  - **Результат:** Объявление создано с эмодзи в названии.
+- **Название не заполнено:**
+  - **Ввод:** Пустое поле "Название".
+  - **Ожидание:** Подсветка поля и сообщение об ошибке.
+  - **Результат:** Поле "Название" выделяется красным.
 ###### Цена
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Ввод символов после изменения типа (html)** <a name="bug-4.2-004"></a>
-  - **Ввод:** `test` // Перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Система пропустила, изменив объявление на нулевую цену
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Ввод%20символов/img_1.png)
-
-- [x] **Отрицательная цена**
-  - **Ввод:** `-2`
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img.png)
-
-  - **Ожидание:** Выделилось красным поле "Цена".
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Отрицательная%20цена/img_1.png)
-
-- [x] **Битые цифры (html)**
-  - **Ввод:** `1` // обработать через https://zalgo.org/ и перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img.png)
-
-  - **Ожидание:** Выделилось красным поле "Цена".
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Битая%20цифра/img_1.png)
-
-- [x] **Дробные числа**
-  - **Ввод:** `0.55555`
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
-  - **Фактический результат:** Вывод соответствующего уведомления о невозможности дробной цены
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа/img.png)
-
-- [x] **Дробные числа (html)**
-  - **Ввод:** `0.55555` // Перед этим изменить type поля на `text`.
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности дробной цены
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Дробные%20числа%20html/img_1.png)
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности пустой цены
-  - **Фактический результат:** Выделилось красным поле "Цена".
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Цена/Пустое%20поле/img.png)
-
+- **Цена равная 0:**
+  - **Ввод:** Цена = `0`.
+  - **Действие:** Нажатие на кнопку "Разместить объявление".
+  - **Ожидание:** Система принимает объявление с нулевой ценой.
+  - **Результат:** Объявление создано успешно.
+- **Отрицательная цена:**
+  - **Ввод:** `-2`.
+  - **Ожидание:** Подсветка поля и сообщение об ошибке.
+  - **Результат:** Поле "Цена" выделяется красным.
+- **Дробные числа в цене:**
+  - **Ввод:** `0.55555`.
+  - **Ожидание:** Сообщение об ошибке.
+  - **Результат:** Выводится уведомление о невозможности дробной цены.
+- **Пустое поле "Цена":**
+  - **Ввод:** Пустое поле.
+  - **Ожидание:** Подсветка поля и сообщение об ошибке.
+  - **Результат:** Поле "Цена" выделяется красным.
 ###### Описание
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
-  - **Фактический результат:** Выделилось красным поле "Описание".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Пустое%20поле/img_1.png)
-
-- [x] **Длинное описание (html)**
-  - **Ввод:** // Сначала убрать атрибут `maxlength`
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия описания
-  - **Фактический результат:** Выделилось красным поле "Описание".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Длинное%20описание/img_1.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Описание содержит код** <a name="bug-4.2-007"></a>
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-  - **Ожидание:** Изменение объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello", но на пустое значение
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Код/img.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.2-008"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление удалось изменить
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Битые%20символы/img_1.png)
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Введены сильно битые символы** <a name="bug-4.2-009"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Ошибка с бекенда, открывает со старым описанием
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Описание/Сильно%20битые%20символы/img_1.png)
-
-###### Фотография
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Попытка добавить png** <a name="bug-4.2-010"></a>
-  - **Ввод:** png и zip (адрес - `img/4.2/Редактирование объявления/Негативные сценарии/Фотография/png-zip/test.zip`)
-
-    ![portal.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/portal.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобного типа
-  - **Фактический результат:** Объявление не удалось изменить, но ответ с бекенда, а не фронта
-
-    ![img.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img.png)
-
-    ![img_1.png](img/4.2/Редактирование%20объявления/Негативные%20сценарии/Фотография/png-zip/img_1.png)
-
+- **Пустое поле "Описание":**
+  - **Ввод:** Пустое поле.
+  - **Ожидание:** Подсветка поля и сообщение об ошибке.
+  - **Результат:** Поле "Описание" выделяется красным.
+- **Длинное описание:**
+  - **Ввод:** Текст более 3000 символов.
+  - **Ожидание:** Ограничение ввода до 3000 символов.
+  - **Результат:** Ввод ограничен 3000 символов.
 ###### Адрес
-
-- [x] **Пустое поле**
-  - **Ввод:** Пустое поле
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности отсутствия адреса
-  - **Фактический результат:** Выделилось красным поле "Адрес".
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Пустое%20поле/img.png)
-
-- [x] **Длинный адрес (html)**
-  - **Ввод:**
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности такого адреса
-  - **Фактический результат:** Выделилось красным поле "Адрес".
-
-  ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Длинный%20адрес%20(html)/img_1.png)
-
-- [x] **Адрес содержит код**
-  - **Ввод:**
-  ```js
-  <script>alert("Hello")</script>
-  ```
-  - **Ожидание:** Изменение объявления без выведения на экран фразы "Hello"
-  - **Фактический результат:** Изменение объявления без выведения на экран фразы "Hello"
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Код/img.png)
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Введены битые символы** <a name="bug-4.2-011"></a>
-  - **Ввод:** `Hello` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Ошибка с бекенда, открывает со старым описанием
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Битые%20символы/img_1.png)
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Введен эмодзи** <a name="bug-4.2-016"></a>
-  - **Ввод:** `😀`
-
-    ![img.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img.png)
-
-  - **Ожидание:** Вывод соответствующего уведомления о невозможности использования подобных символов
-  - **Фактический результат:** Объявление изменилось
-
-    ![img_1.png](./img/4.2/Редактирование%20объявления/Негативные%20сценарии/Адрес/Эмодзи/img_1.png)
-
-##### Визуальные
-
-###### Категория
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-012"></a>
-  - **Фактический результат:** Выход за границы экрана
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Категория/img.png)
-
-###### Название
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-013"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Название/img.png)
-
-###### Описание
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-014"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Описание/img.png)
-
-###### Адрес
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-015"></a>
-  - **Фактический результат:** Выход за границы экрана (поля ввода и комментария по ограничению размера)
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Адрес/img.png)
-
-###### Кнопка
-
-**$${\color{red}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-017"></a>
-  - **Фактический результат:** Выход за границы экрана
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Кнопка/img.png)
-
-###### Форма
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 1000px и меньше** <a name="bug-4.2-018"></a>
-  - **Фактический результат:** Форма не помещается, появляется горизонтальный ползунок
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Форма/img.png)
-
-###### Оглавление
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 300px** <a name="bug-4.2-019"></a>
-  - **Фактический результат:** Оглавление прижато к левому краю
-
-  ![img.png](./img/4.2/Редактирование%20объявления/Визуальные/Оглавление/img.png)
-
-##### Визуальные в других браузерах
-
-###### Safari
-
-- [x] **Новых ошибок визуала нет (не считая поля выбора категории)**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img.png)
-
-  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_2.png)
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Поле выбора категории** <a name="bug-4.2-020"></a>
-  - **Фактический результат:** Нет окантовки (обводка поля выбора)
-
-  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
-
-###### FireFox
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img.png)
-
-  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
-
-  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
-
-  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
-
-###### Opera
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img.png)
-
-  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
-
-  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
-
-  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
-
-###### Microsoft Edge
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
-
-  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
-
-  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
-
-  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
-
-###### Yandex
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img.png)
-
-  ![img_1.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
-
-  ![img_2.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
-
-  ![img_3.png](img/4.2/Редактирование%20объявления/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
+- **Пустое поле "Адрес":**
+  - **Ввод:** Пустое поле.
+  - **Ожидание:** Подсветка поля и сообщение об ошибке.
+  - **Результат:** Поле "Адрес" выделяется красным.
+- **Длинный адрес:**
+  - **Ввод:** Текст более 150 символов.
+  - **Ожидание:** Ограничение ввода до 150 символов.
+  - **Результат:** Ввод ограничен 150 символами.
+- **Адрес содержит код:**
+  - **Ввод:** `<script>alert("Hello")</script>`.
+  - **Ожидание:** Код не выполняется, отображается как текст.
+  - **Результат:** Объявление создано, код отображается как текст без выполнения.
+
+##### 4.1.1.5 Визуальные тесты в других браузерах
+- **Safari, Firefox, Opera, Microsoft Edge, Yandex:**
+  - **Ожидание:** Визуальная и функциональная составляющая идентичны Google Chrome.
+  - **Результат:** Все браузеры показали одинаковую визуальную и функциональную работу.
+
+#### 4.1.2 Страница редактирования объявления
+
+##### 4.1.2.1 Доступ к странице
+- **Переход из страницы созданного объявления:**
+  - На странице объявления (доступной через каталог) есть кнопка "Редактировать", ведущая на страницу редактирования.
+  - **Результат:** Переход работает корректно.
+
+##### 4.1.2.2 Форма редактирования объявления
+- **Поля формы:** Аналогичны форме создания объявления.
+- **Кнопка "Сохранить изменения":** Сохраняет изменения в объявлении.
+
+##### 4.1.2.3 Общее взаимодействие со страницей
+- **Успешное редактирование товара:**
+  - **Ввод:** Изменение данных в любом из полей (например, цена с `999` на `1499`).
+  - **Действие:** Нажатие на кнопку "Сохранить изменения".
+  - **Ожидание:** Изменения сохранены, обновленное объявление отображается в каталоге.
+  - **Результат:** Изменения сохранены корректно.
+
+##### 4.1.2.4 Проверка функциональности
+- **Аналогичны сценариям для создания объявления:**
+  - Пустые поля, некорректные данные (отрицательная цена, дробные числа, длинный текст и т.д.).
+  - **Ожидание:** Логика поведения полей формы совпадает со страницей создания объявления.
+  - **Результат:** Поведение идентично странице создания.
 
 <br/><br/><br/>
 
@@ -947,183 +178,57 @@
 
 <br/><br/><br/>
 
-### 4.4 Поиск
-
-##### Позитивные сценарии
-
-- [x] **Успешный поиск товара по полному названию**
-  - **Ввод:** `Настольная игра`
-  - **Действие:** Нажатие на кнопку поиска
-
-    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img.png)
-
-  - **Ожидание:** Искомый товар отображается в результатах поиска
-  - **Фактический результат:** Искомый товар отображается в результатах поиска
-
-    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20полном%20названии/img_1.png)
-
-- [x] **Успешный поиск товара по неполному названию**
-  - **Ввод:** `Настольная игр`
-  - **Действие:** Нажатие на кнопку поиска
-
-    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img.png)
-
-  - **Ожидание:** Искомый товар отображается в результатах поиска
-  - **Фактический результат:** Искомый товар отображается в результатах поиска
-
-    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Поиск%20при%20неполном%20названии/img_1.png)
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Возврат к прошлому запросу** <a name="bug-4.4-001"></a>
-  - **Ввод:** `Настольная игр`
-  - **Действие:** Нажатие на кнопку поиска
-
-    ![img.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img.png)
-
-  - **Ввод:** `Настольная игра`
-  - **Действие:** Нажатие на кнопку поиска
-
-    ![img_1.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_1.png)
-
-  - **Действие:** Нажатие на кнопку вернуться
-
-    ![img_2.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_2.png)
-
-  - **Ожидание:** Видно предыдущий запрос
-  - **Фактический результат:** Поломалась верстка
-
-    ![img_3.png](./img/4.4/Поиск/Позитивные%20сценарии/Возврат%20к%20прошлому%20запросу/img_3.png)
-
-##### Негативные сценарии
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Попытка поиска при незаполненном поле ввода**  <a name="bug-4.4-002"></a>
-  - **Ввод:** Пустая строка
-
-    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Пустая%20строка/img.png)
-
-  - **Действие:** Нажатие на кнопку поиска
-  - **Ожидание:** Должно подсказать, что ничего не введено (должна появиться красная окантовка вокруг поля поиска)
-  - **Фактический результат:** Ничего не произошло
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Поиск несуществующего товара**  <a name="bug-4.4-003"></a>
-  - **Ввод:** `что-то непонятное`
-
-    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img.png)
-
-  - **Действие:** Нажатие на кнопку поиска
-  - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
-  - **Фактический результат:** Пустая страница
-
-    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Несуществующий%20товар/img_1.png)
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Битые символы**  <a name="bug-4.4-004"></a>
-  - **Ввод:** `Настольная игра` // обработанное через https://zalgo.org/
-
-    ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img.png)
-
-  - **Действие:** Нажатие на кнопку поиска
-  - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
-  - **Фактический результат:** Ошибка с бекенда
-
-    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Битые%20символы/img_1.png)
-
-**$${\color{darkorange}БАГ.}$$**
-
-- [ ] **Большой запрос**  <a name="bug-4.4-005"></a>
-  - **Ввод:**
-  ```md
-  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-  ```
-  ![img.png](./img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img.png)
-
-  - **Действие:** Нажатие на кнопку поиска
-  - **Ожидание:** Должно подсказать, что таких товаров нет (должна быть заглушка с пояснением покупателю, что искомых им товаров нет и предложением найти что-то другое)
-  - **Фактический результат:** Ошибка с бекенда
-
-    ![img_1.png](./img/4.4/Поиск/Негативные%20сценарии/Длинный%20запрос/img_1.png)
-
-##### Визуальные
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Уменьшение экрана до ширины 1200px** <a name="bug-4.4-006"></a>
-  - **Фактический результат:** Пустая кнопка поиска
-
-  ![img.png](./img/4.4/Поиск/Визуальные/img.png)
-
-##### Визуальные в других браузерах
-
-###### Safari
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img.png)
-
-  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Safari/img_1.png)
-
-###### FireFox
-
-**$${\color{gold}БАГ.}$$**
-
-- [ ] **Поломанный адаптив** <a name="bug-4.4-007"></a>
-  - **Фактический результат:** Неверное расположения поля при изменении размера экрана, не всегда занимает все доступное место
-
-  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img.png)
-
-  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_1.png)
-
-  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_2.png)
-
-  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_3.png)
-
-  ![img_4.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/FireFox/img_4.png)
-
-###### Opera
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img.png)
-
-  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_1.png)
-
-  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_2.png)
-
-  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Opera/img_3.png)
-
-###### Microsoft Edge
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img.png)
-
-  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_1.png)
-
-  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_2.png)
-
-  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Microsoft%20Edge/img_3.png)
-
-###### Yandex
-
-- [x] **Новых ошибок визуала нет**
-  - **Фактический результат:** Новые ошибки не появилось (в сравнении с Google Chrome)
-
-  ![img.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img.png)
-
-  ![img_1.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_1.png)
-
-  ![img_2.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_2.png)
-
-  ![img_3.png](img/4.4/Поиск/Визуальные%20в%20других%20браузерах/Yandex/img_3.png)
+### 4.4 Отчет о тестировании функциональности поиска
+
+#### 4.4.1 Доступ к поиску
+- **Местоположение:**
+  - Поиск является составляющей частью хедера и доступен на всех страницах сайта.
+  - **Результат:** Переход к поиску возможен с любой страницы через хедер.
+
+#### 4.4.2 Форма поиска
+- **Компоненты поиска:**
+  - Поле ввода для поискового запроса.
+  - Кнопка "Найти".
+  - **Результат:** Оба компонента присутствуют и отображаются корректно.
+
+#### 4.4.3 Функциональность поиска
+- **Пустой поисковый запрос:**
+  - **Ввод:** Пустое поле поиска.
+  - **Действие:** Нажатие на кнопку "Найти".
+  - **Ожидание:** Кнопка "Найти" не работает, пользователь остается на той же странице.
+  - **Результат:** Кнопка "Найти" не реагирует, страница не изменяется.
+- **Успешный поиск по полному названию товара:**
+  - **Ввод:** `Настольная игра`.
+  - **Действие:** Нажатие на кнопку "Найти".
+  - **Ожидание:** Отображение товаров с названием "Настольная игра" в результатах поиска.
+  - **Результат:** Искомые товары отображаются корректно.
+- **Успешный поиск по неполному названию товара:**
+  - **Ввод:** `Настольная игр`.
+  - **Действие:** Нажатие на кнопку "Найти".
+  - **Ожидание:** Отображение товаров, содержащих "Настольная игр" (например, "Настольная игра").
+  - **Результат:** Искомые товары отображаются в результатах поиска.
+- **Поиск с учетом регистра:**
+  - **Ввод:** `настольная игра` (в нижнем регистре).
+  - **Действие:** Нажатие на кнопку "Найти".
+  - **Ожидание:** Поиск не чувствителен к регистру, отображаются товары с названием "Настольная игра".
+  - **Результат:** Искомые товары отображаются независимо от регистра.
+
+##### 4.4.4 Тесты в других браузерах
+- **Safari:**
+  - **Ожидание:** Визуальная и функциональная составляющая идентичны Google Chrome.
+  - **Результат:** Визуальная и функциональная составляющая остались прежними.
+- **Firefox:**
+  - **Ожидание:** Функциональная составляющая идентична Google Chrome.
+  - **Результат:** Функциональная составляющая осталась прежней.
+- **Opera:**
+  - **Ожидание:** Визуальная и функциональная составляющая идентичны Google Chrome.
+  - **Результат:** Визуальная и функциональная составляющая остались прежними.
+- **Microsoft Edge:**
+  - **Ожидание:** Визуальная и функциональная составляющая идентичны Google Chrome.
+  - **Результат:** Визуальная и функциональная составляющая остались прежними.
+- **Yandex:**
+  - **Ожидание:** Визуальная и функциональная составляющая идентичны Google Chrome.
+  - **Результат:** Визуальная и функциональная составляющая остались прежними.
 
 <br/><br/><br/>
 
